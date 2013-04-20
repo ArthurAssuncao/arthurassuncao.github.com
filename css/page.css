@@ -1,9 +1,11 @@
+body{
+    background:url('../img/snow.jpg') repeat 0 0;
+}
 .sombra{
     box-shadow: 1px 1px 5px rgba(200, 200, 200, 0.8);
 }
 #wrapper{
     padding-top: 20px;
-    background:url('../img/snow.jpg') repeat 0 0;
 }
 #principal{
     height: 440px;
