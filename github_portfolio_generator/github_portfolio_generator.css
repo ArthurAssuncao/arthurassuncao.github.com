@@ -46,3 +46,67 @@ li.github-gpg-project > a{
     text-align: left;
     white-space: normal !important;
 }
+/* Smooth Caption efect */
+.github-gpg-project  { 
+    display: block; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.project-gpg-description { 
+    position: absolute; 
+    background: rgba(0, 0, 0, 0.75); 
+    color: white; 
+    padding: 10px 20px; 
+}
+.project-gpg-description { 
+    position: absolute; 
+    background: rgba(0, 0, 0, 0.75); 
+    color: white; 
+    padding: 10px 20px; 
+
+    opacity: 0;
+    bottom: 0; 
+    left: -30%;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition:    all 0.6s ease;
+    -o-transition:      all 0.6s ease;
+}
+.github-gpg-project:hover .project-gpg-description {
+    opacity: 1;
+    left: 0;
+}
+.github-gpg-cap-left .project-gpg-description {
+    bottom: 0; 
+    left: -30%;
+}
+.github-gpg-cap-left:hover .project-gpg-description {
+    left: 0;
+}
+
+.github-gpg-cap-right .project-gpg-description {
+    bottom: 0;
+    right: -30%;
+}
+.github-gpg-cap-right:hover .project-gpg-description {
+    right: 0;
+}
+
+.github-gpg-cap-top .project-gpg-description {
+    left: 0;
+    top: -30%;
+    min-width: 90%;
+}
+.github-gpg-cap-top:hover .project-gpg-description {
+    top: 70px;
+}
+
+.github-gpg-cap-bottom .project-gpg-description {
+    left: 0;
+    bottom: -30%;
+    min-width: 90%;
+}
+.github-gpg-cap-bottom:hover .project-gpg-description {
+    bottom: 0;
+}
