@@ -1,6 +1,6 @@
 #wrapper{
     padding-top: 20px;
-    background:url('snow.jpg') repeat 0 0;
+    background:url('../img/snow.jpg') repeat 0 0;
 }
 #principal{
     height: 440px;
