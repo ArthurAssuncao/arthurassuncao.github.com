@@ -47,19 +47,19 @@ li.github-gpg-project > a{
     white-space: normal !important;
 }
 /* Smooth Caption efect */
-.github-gpg-project  { 
+.github-gpg-project-slide  { 
     display: block; 
     position: relative; 
     overflow: hidden; 
 }
 
-.project-gpg-description { 
+.project-gpg-description-caption { 
     position: absolute; 
     background: rgba(0, 0, 0, 0.75); 
     color: white; 
     padding: 10px 20px; 
 }
-.project-gpg-description { 
+.project-gpg-description-caption { 
     position: absolute; 
     background: rgba(0, 0, 0, 0.75); 
     color: white; 
@@ -73,40 +73,40 @@ li.github-gpg-project > a{
     -moz-transition:    all 0.6s ease;
     -o-transition:      all 0.6s ease;
 }
-.github-gpg-project:hover .project-gpg-description {
+.github-gpg-project-slide:hover .project-gpg-description-caption {
     opacity: 1;
     left: 0;
 }
-.github-gpg-cap-left .project-gpg-description {
+.github-gpg-cap-left .project-gpg-description-caption {
     bottom: 0; 
     left: -30%;
 }
-.github-gpg-cap-left:hover .project-gpg-description {
+.github-gpg-cap-left:hover .project-gpg-description-caption {
     left: 0;
 }
 
-.github-gpg-cap-right .project-gpg-description {
+.github-gpg-cap-right .project-gpg-description-caption {
     bottom: 0;
     right: -30%;
 }
-.github-gpg-cap-right:hover .project-gpg-description {
+.github-gpg-cap-right:hover .project-gpg-description-caption {
     right: 0;
 }
 
-.github-gpg-cap-top .project-gpg-description {
+.github-gpg-cap-top .project-gpg-description-caption {
     left: 0;
     top: -30%;
     min-width: 90%;
 }
-.github-gpg-cap-top:hover .project-gpg-description {
+.github-gpg-cap-top:hover .project-gpg-description-caption {
     top: 70px;
 }
 
-.github-gpg-cap-bottom .project-gpg-description {
+.github-gpg-cap-bottom .project-gpg-description-caption {
     left: 0;
     bottom: -30%;
     min-width: 90%;
 }
-.github-gpg-cap-bottom:hover .project-gpg-description {
+.github-gpg-cap-bottom:hover .project-gpg-description-caption {
     bottom: 0;
 }
