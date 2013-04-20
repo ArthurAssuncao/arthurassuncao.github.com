@@ -1,9 +1,5 @@
-$(document).ready(function() {
-    generate_projects();
-});
-
-function generate_projects(){
-    $.getJSON('https://api.github.com/users/ArthurAssuncao/repos?&sort=updated', function(resp) {
+function generate_projects(user){
+    $.getJSON('https://api.github.com/users/' + user + '/repos?&sort=updated', function(resp) {
         if (resp.length > 0) {
             $('#github-gpg-repos').append('<ul id="project-gpg-list" class="unstyled"></ul>');
             var tags_li = '';
@@ -21,3 +17,17 @@ function generate_projects(){
         }
     });
 }
+
+(function($){
+    $.GithubPortfolioGenerator = function(settings){
+        var config = {
+            'user': 'ArthurAssuncao',
+        };
+        if (settings){$.extend(config, settings);}
+        console.log(config);
+        console.log(settings);
+        generate_projects(config.user);
+
+        return this;
+    };
+})(jQuery);
