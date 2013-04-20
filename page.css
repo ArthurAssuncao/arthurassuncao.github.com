@@ -1,0 +1,24 @@
+#wrapper{
+    padding-top: 20px;
+    background:url('snow.jpg') repeat 0 0;
+}
+#principal{
+    height: 440px;
+}
+#estatisticas, #recentemente_atualizados{
+    height: 130px;
+}
+.titulo{
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 0;
+    padding: 0;
+}
+.descricao{
+    text-align: justify;
+    white-space: normal !important;
+}
+#recentemente_atualizados > ul{
+    font-size: 12px;
+    line-height: 12px;
+}

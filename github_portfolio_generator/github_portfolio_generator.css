@@ -1,0 +1,43 @@
+#github-repos li{
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+#github-repos a{
+    text-decoration: none;
+}
+#github-repos li:hover{
+    background: rgba(230, 230, 230, 0.8);
+}
+#project-list{
+    margin-left: 0;
+}
+.sombra{
+    box-shadow: 1px 1px 5px rgba(200, 200, 200, 0.8);
+}
+.github-project{
+    min-height: 250px;
+    /*height: auto !important;*/
+    height: 250px;
+}
+.github-project a, .github-project a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.project-name{
+    color: #0084b4;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.project-language{
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: normal;
+}
+.project-description{
+    text-align: left;
+    white-space: normal !important;
+}
