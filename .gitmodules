@@ -1,0 +1,3 @@
+[submodule "github_portfolio_generator"]
+	path = github_portfolio_generator
+	url = https://github.com/ArthurAssuncao/Github_Portfolio_Generator.git
