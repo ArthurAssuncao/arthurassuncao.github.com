@@ -50,10 +50,12 @@
         <script type="text/javascript" src="js/page.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-                $.GithubPortfolioGenerator({
-                    'user' : 'ArthurAssuncao',
-                    'slide_direction' : 'bottom',
-                    'exclude_list' : ['arthurassuncao.github.com'],
+                new GithubPortfolioGenerator({
+                    user : 'ArthurAssuncao',
+                    dom_node : '#github-gpg-repos',
+                    slide_direction : 'bottom',
+                    show_forks : true,
+                    exclude_list : ['arthurassuncao.github.com']
                 });
             });
         </script>
