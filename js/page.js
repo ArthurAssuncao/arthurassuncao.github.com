@@ -76,7 +76,7 @@ function get_organizations(){
             var total_estrelas = 0;
             var tags_li = new Array(resp.length);
             $.each(resp, function(i, organizacao) {
-                tags_li[i] = '<li><a href="' + organizacao['repos_url'] + '"><img class="organizacao-logo bootstrap-tooltip" src="' + organizacao['avatar_url'] + '" alt="logo da ' + organizacao['login'] + '" width="36px" height="36px" class="bootstrap-tooltip" title="' + organizacao['login'] + '" /></a>';
+                tags_li[i] = '<li><a href="' + organizacao['repos_url'] + '"><img class="organizacao-logo bootstrap-tooltip" src="' + organizacao['avatar_url'] + '" alt="logo da ' + organizacao['login'] + '" width="36px" height="36px" title="' + organizacao['login'] + '" /></a>';
             });
             $('#organizacoes > ul').append(tags_li.join("\n"));
             add_tooltip();
