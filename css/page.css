@@ -9,6 +9,7 @@ body{
 }
 #principal{
     height: 440px;
+    min-height: 440px;
 }
 #estatisticas, #recentemente_atualizados{
     height: 130px;
