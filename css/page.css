@@ -1,15 +1,42 @@
 body{
     background:url('../img/snow.jpg') repeat 0 0;
 }
+#lado-esquerdo{
+    padding-right: 10px;
+    padding-top: 20px;
+    position: fixed;
+    border-right: 1px solid #eee;
+}
+#lado-direito{
+}
+#nome_usuario{
+    text-align: center;
+}
+#avatar_usuario{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: 210px;
+    width: 210px;
+}
+#organizacoes{
+    height: 70px;
+}
+#recentemente_atualizados{
+    min-height: 100px;
+}
+.scroll-pane {
+    height: 100%;
+    overflow-y: scroll;
+}
+#github-gpg-repos li{
+    padding-right: 0px !important;
+}
 .sombra{
     box-shadow: 1px 1px 5px rgba(200, 200, 200, 0.8);
 }
-#wrapper{
-    padding-top: 20px;
-}
 #principal{
-    height: 440px;
-    min-height: 440px;
 }
 #estatisticas, #recentemente_atualizados{
     height: 130px;

@@ -11,45 +11,56 @@
         <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" />
         <link rel="stylesheet" type="text/css" href="github_portfolio_generator/github_portfolio_generator.css" />
+        <link rel="stylesheet" type="text/css" href="jscrollpane/jquery.jscrollpane.css" />
+        <link rel="stylesheet" type="text/css" href="jscrollpane/jquery.jscrollpane.theme.css" />
         <link rel="stylesheet" type="text/css" href="css/page.css" />
         <link rel="shortcut icon" href="http://arthurassuncao.com/favicon.ico" />
     </head>
     <body>
         <div id="wrapper" class="container page">
             <div id="content" class="row">
-                <div id="principal" class="well sombra span3">
-                    <h1 class="titulo">Arthur Assuncao</h1>
-                    <div class="descricao">
-                        <p>Atualmente desenvolvedor de aplicações móveis para o suporte a aplicações comerciais e desenvolvedor de Web Services para a comunicação das aplicações móveis com os sistemas comerciais na AddTI Integradora de Soluções.</p>
+                <div id="lado-esquerdo" class="scroll-pane span5">
+                    <div id="principal">
+                        <h1 class="titulo" id="nome_usuario">Arthur Assuncao</h1>
+                            <img id="avatar_usuario" height="210px" width="210px" alt="Arthur Assuncao"/>
+                        <div class="descricao">
+                            <p>Atualmente desenvolvedor de aplicações móveis para o suporte a aplicações comerciais e desenvolvedor de Web Services para a comunicação das aplicações móveis com os sistemas comerciais na AddTI Integradora de Soluções.</p>
 
-                        <p>Graduando em Tecnologia em Sistemas para Internet pelo Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais. Atualmente cursando o 5º período.</p>
+                            <p>Graduando em Tecnologia em Sistemas para Internet pelo Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais. Atualmente cursando o 5º período.</p>
 
-                        <a href="http://arthurassuncao.com">ArthurAssuncao.com</a>
-                        <a href="http://blog.arthurassuncao.com">Blog.ArthurAssuncao.com</a>
+                            <a href="http://arthurassuncao.com">ArthurAssuncao.com</a>
+                            <br />
+                            <a href="http://blog.arthurassuncao.com">Blog.ArthurAssuncao.com</a>
+                        </div>
+                        <br />
+                        <div id="organizacoes"></div>
                     </div>
                     <br />
-                    <div id="organizacoes"></div>
+                    <div id="estatisticas">
+                        <h1 class="titulo">Estatísticas</h1>
+                        <a href="https://github.com/ArthurAssuncao/repositories"><span id="repositorios_publicos"></span> repositórios públicos</a>
+                        <br />
+                        <a href="https://github.com/ArthurAssuncao/followers"><span id="github_seguidores"></span> seguidores</a>
+                        <br />
+                        <span id="total_estrelas"></span> estrelas</a>
+                        <br />
+                        <span id="total_forks"></span> forks</a>
+                    </div>
+                    <div id="recentemente_atualizados">
+                        <h1 class="titulo">Atualizados Recentemente</h1>
+                    </div>
                 </div>
-                <div id="estatisticas" class="well sombra span3">
-                    <h1 class="titulo">Estatísticas</h1>
-                    <a href="https://github.com/ArthurAssuncao/repositories"><span id="repositorios_publicos"></span> repositórios públicos</a>
-                    <br />
-                    <a href="https://github.com/ArthurAssuncao/followers"><span id="github_seguidores"></span> seguidores</a>
-                    <br />
-                    <span id="total_estrelas"></span> estrelas</a>
-                    <br />
-                    <span id="total_forks"></span> forks</a>
+                <div id="lado-direito" class="offset5 span7">
+                    <div id="github-gpg-repos"></div>
                 </div>
-                <div id="recentemente_atualizados" class="well sombra span4">
-                    <h1 class="titulo">Atualizados Recentemente</h1>
-                </div>
-                <div id="github-gpg-repos"></div>
             </div>
         </div>
         <!-- Javascript no fim rodam mais rapido -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="github_portfolio_generator/github_portfolio_generator.js"></script>
+        <script type="text/javascript" src="jscrollpane/jquery.jscrollpane.min.js"></script>
+        <script type="text/javascript" src="jscrollpane/jquery.mousewheel.js"></script>
         <script type="text/javascript" src="js/page.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
