@@ -1,0 +1,11 @@
+/*JScrollPane CSS*/
+.jspVerticalBar{
+	width: 10px;
+}
+.jspTrack{
+	background: #ccc;
+}
+.jspDrag{
+	background: #555;
+	opacity: 0.8;
+}
