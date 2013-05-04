@@ -78,6 +78,7 @@ function add_tooltip(){
 
 function add_scrollbar(){
     $('#lado-esquerdo').jScrollPane({
-            mouseWheelSpeed: 20
+            mouseWheelSpeed: 20,
+            hideFocus: true
         });
 }
