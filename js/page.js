@@ -7,12 +7,6 @@ $(document).ready(function() {
     add_scrollbar();
 });
 
-function get_numero_repositorios_publicos(){
-    $.getJSON('https://api.github.com/users/ArthurAssuncao/repos', function(resp) {
-        $('#repositorios_publicos').html(resp.length);
-    });
-}
-
 function get_numero_seguidores(){
     $.getJSON('https://api.github.com/users/ArthurAssuncao/followers', function(resp) {
         $('#github_seguidores').html(resp.length);
