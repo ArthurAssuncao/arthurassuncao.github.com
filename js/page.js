@@ -77,5 +77,7 @@ function add_tooltip(){
 }
 
 function add_scrollbar(){
-    $('#lado-esquerdo').jScrollPane();
+    $('#lado-esquerdo').jScrollPane({
+            mouseWheelSpeed: 20
+        });
 }
